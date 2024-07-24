@@ -8,20 +8,9 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "husky": "^9.1.1",
-    "lerna": "^8.1.7",
-    "lint-staged": "^15.2.7"
+    "lerna": "^8.1.7"
   },
   "scripts": {
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "packages/frontend/src/**/*.{js,jsx,ts,tsx}": [
-      "cd packages/frontend && npm run lint",
-      "cd packages/frontend && prettier --write"
-    ],
-    "packages/backend/src/**/*.{js,ts}": [
-      "cd packages/backend && eslint --fix",
-      "cd packages/backend && prettier --write"
-    ]
   }
 }

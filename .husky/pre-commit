@@ -1,1 +1,1 @@
-npx lint-staged
+cd packages/frontend && npx lint-staged
