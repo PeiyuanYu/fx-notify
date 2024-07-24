@@ -7,7 +7,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-
+  const example: any = 'This should trigger an ESLint error';
   return (
     <>
       <div className="flex items-center justify-center h-screen">
