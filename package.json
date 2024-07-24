@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "packages/frontend/src/**/*.{js,jsx,ts,tsx}": [
-      "cd packages/frontend && eslint --fix",
+      "cd packages/frontend && npm run lint",
       "cd packages/frontend && prettier --write"
     ],
     "packages/backend/src/**/*.{js,ts}": [
