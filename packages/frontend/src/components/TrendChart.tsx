@@ -103,7 +103,7 @@ function TrendChart() {
   const trendToday = calculateTrendToday(filteredData, 'AUD');
 
   return (
-    <div className="w-full max-w-[500px] my-10 mx-auto border-slate-100	border-2 rounded-md p-4 flex flex-col gap-2 text-sm">
+    <div className="w-full max-w-[500px] my-2 mx-auto border-slate-100	border-2 rounded-md p-4 flex flex-col gap-2 text-sm">
       <p className="flex gap-2 font-medium text-lg">
         Australian Dollar to Chinese Yuan Exchange Rate
       </p>
