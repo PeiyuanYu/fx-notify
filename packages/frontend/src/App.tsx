@@ -3,6 +3,7 @@ import { Card, CardHeader } from '@/components/ui/card';
 import { buttonVariants } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import SingleFX from './components/SingleFX';
 // import ChartAndNotify from './components/ChartAndNotify';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               </Avatar>
             </CardHeader>
             <Outlet />
+            <SingleFX />
             {/* <ChartAndNotify /> */}
           </Card>
         </div>

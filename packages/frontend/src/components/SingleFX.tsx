@@ -11,7 +11,7 @@ import {
 import FlagIcon from 'react-flagkit';
 import { FiEye, FiHeart, FiBell } from 'react-icons/fi';
 import { GoArrowSwitch } from 'react-icons/go';
-import TrendChart from './TrendChart';
+import ChartAndNotify from './ChartAndNotify';
 
 const apiEndpoint = 'http://api.exchangeratesapi.io/v1/latest';
 
@@ -90,13 +90,13 @@ const SingleFX = () => {
                 <FiEye size={20} />
               </Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="max-w-screen-lg w-full">
               <DialogHeader>
                 <DialogTitle className="text-center">
                   Exchange Rate Details
                 </DialogTitle>
               </DialogHeader>
-              <TrendChart />
+              <ChartAndNotify />
             </DialogContent>
           </Dialog>
           <Button variant="outline">
