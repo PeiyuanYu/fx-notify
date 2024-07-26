@@ -1,5 +1,11 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.tsserver.watchOptions": {},
-  "eslint.workingDirectories": ["./packages/frontend", "./packages/backend"]
+  "eslint.workingDirectories": ["./packages/frontend", "./packages/backend"],
+  // 开启 prettier
+  "prettier.enable": true,
+  // 是否自动格式化
+  "editor.formatOnSave": true,
+  // 默认格式化工具选择 prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

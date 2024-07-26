@@ -3,6 +3,7 @@ import { Card, CardHeader } from '@/components/ui/card';
 import { buttonVariants } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+// import TrendChart from './components/TrendChart';
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
               </Avatar>
             </CardHeader>
             <Outlet />
+            {/* <TrendChart /> */}
           </Card>
         </div>
       </div>
