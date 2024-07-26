@@ -3,6 +3,7 @@ import { Card, CardHeader } from '@/components/ui/card';
 import { buttonVariants } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+// import ChartAndNotify from './components/ChartAndNotify';
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
               </Avatar>
             </CardHeader>
             <Outlet />
+            {/* <ChartAndNotify /> */}
           </Card>
         </div>
       </div>
