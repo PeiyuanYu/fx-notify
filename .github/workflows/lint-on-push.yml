@@ -1,10 +1,7 @@
-name: Lint and Format Check
+name: Lint and Format Check on Push
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 
@@ -15,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -34,3 +33,6 @@ jobs:
           cd packages/frontend
           npm run lint
           npx prettier --check "src/**/*.{js,jsx,ts,tsx}"
+
+      - name: Check commit messages
+        run: npx commitlint --from=HEAD~1 --to=HEAD
